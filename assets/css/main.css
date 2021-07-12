@@ -121,7 +121,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #777;
+		color: rgb(212, 212, 212);
 		font-weight: 700;
 	}
 
@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: rgb(212, 212, 212);;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1790,7 +1790,7 @@ input, select, textarea {
 	}
 
 		header.major h2 + p {
-			color: #777;
+			color: rgb(212, 212, 212);;
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -1803,7 +1803,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #777;
+		color: rgb(212, 212, 212);;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 700;
@@ -1862,7 +1862,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #777;
+			color: rgb(212, 212, 212);;
 			background: #000;
 		}
 
@@ -2463,7 +2463,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #777;
+			color: rgb(212, 212, 212);;
 			font-size: 0.9em;
 			font-weight: 700;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2589,7 +2589,7 @@ input, select, textarea {
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #e4e4e4;
-			color: #777 !important;
+			color: rgb(212, 212, 212); !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2597,7 +2597,7 @@ input, select, textarea {
 			input[type="button"].alt:hover,
 			.button.alt:hover {
 				background-color: #f4f4f4;
-				color: #777 !important;
+				color: rgb(212, 212, 212); !important;
 			}
 
 			input[type="submit"].alt:active,
@@ -2701,13 +2701,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		/*background: #ffb005;*/
-		background: repeating-linear-gradient(
-			45deg,
-			#ffb005,
-			#ffb005 4px,
-			#553a01 4px,
-			#553a01 8px
-			);
+		background: repeating-linear-gradient( 45deg, #ffb005, #ffb005 8px, #cc8b00 8px, #cc8b00 16px );
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2716,6 +2710,7 @@ input, select, textarea {
 		top: 0;
 		width: 23em;
 		right: 0;
+		text-shadow: 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black;
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
