@@ -2162,7 +2162,13 @@ input, select, textarea {
 
 		.image img {
 			border-radius: 5px;
+			border: 2px solid #ccc;
 			display: block;
+			transition: all 0.5s ease;
+		}
+
+		.image img:hover {
+			border: 2px solid #ffb005;
 		}
 
 		.image.left {
@@ -2190,14 +2196,15 @@ input, select, textarea {
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background: rgba(255,176,5, 0.4);
-			transition: background .3s linear;	
+			/*background: rgba(255,176,5, 0.4);
+			transition: background .3s linear;	*/
 			border-radius: 5px;
-			border: 2px solid #ffb005;
+			border: 0px solid #ffb005;
 		}
+		/*
 		.image.fit:hover:before{
 			background: none;
-		}
+		}*/
 
 			.image.fit img {
 				display: block;
