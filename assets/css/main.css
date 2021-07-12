@@ -2190,7 +2190,7 @@ input, select, textarea {
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background: rgba(0,255,255, 0.5);
+			background: rgba(255,176,5, 0.8);
 			transition: background .3s linear;
 		}
 		.image.fit:hover:before{
@@ -2200,6 +2200,13 @@ input, select, textarea {
 			.image.fit img {
 				display: block;
 				width: 100%;
+			}
+			.image.fit img:before{
+				filter: saturate(0%);
+				transition: opacity .3s linear;
+			}
+			.image.fit img:hover:before{
+				filter: saturate(100%);
 			}
 
 		.image.avatar {
