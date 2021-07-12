@@ -2051,7 +2051,7 @@ input, select, textarea {
 
 	.image {
 		border-radius: 5px;
-		border: 2px solid #ffb005;
+		border: 0px solid #ffb005;
 		display: inline-block;
 		position: relative;
 	}
@@ -2197,17 +2197,18 @@ input, select, textarea {
 			background: none;
 		}
 
-			.image.fit img {
+			.image.fit img:before {
 				display: block;
 				width: 100%;
 				filter: grayscale(100%);
 				transition: all 300ms ease;
+				border: 2px solid #ffb005;
 			}
 			.image.fit .image.avatar{
 				filter: grayscale(100%);
 				transition: all 300ms ease;
 			}
-			.image.fit img:hover{
+			.image.fit img:hover:before{
 				filter: grayscale(0%);
 			}
 
