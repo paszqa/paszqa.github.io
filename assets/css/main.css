@@ -2051,7 +2051,7 @@ input, select, textarea {
 
 	.image {
 		border-radius: 5px;
-		border: 0px solid #ffb005;
+		border: 2px solid #ffb005;
 		display: inline-block;
 		position: relative;
 	}
@@ -2202,7 +2202,6 @@ input, select, textarea {
 				width: 100%;
 				filter: grayscale(100%);
 				transition: all 300ms ease;
-				border: 2px solid #ffb005;
 			}
 			.image.fit .image.avatar{
 				filter: grayscale(100%);
