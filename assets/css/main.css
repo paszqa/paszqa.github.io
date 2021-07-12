@@ -2182,6 +2182,20 @@ input, select, textarea {
 			margin: 0 0 2.25em 0;
 			width: 100%;
 		}
+		.image.fit:before {			
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,255,255, 0.5);
+			transition: background .3s linear;
+		}
+		.image.fit:hover:before{
+			background: none;
+		}
 
 			.image.fit img {
 				display: block;
@@ -2237,7 +2251,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 2px #f4f4f4;
+				border-top: solid 2px #ffb005;
 				padding: 0.5em 0;
 			}
 
