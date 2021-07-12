@@ -2653,7 +2653,7 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #f4f4f4;
+		border-top: solid 3px #ffb005;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2700,7 +2700,14 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #ffb005;
+		/*background: #ffb005;*/
+		background: repeating-linear-gradient(
+			45deg,
+			#ffb005,
+			#ffb005 4px,
+			#553a01 4px,
+			#553a01 8px
+			);
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
