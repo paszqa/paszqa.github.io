@@ -2200,6 +2200,8 @@ input, select, textarea {
 			.image.fit img {
 				display: block;
 				width: 100%;
+				filter: grayscale(100%);
+				transition: all 300ms ease;
 			}
 			.image.fit .image.avatar{
 				filter: grayscale(100%);
