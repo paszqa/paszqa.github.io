@@ -2050,8 +2050,8 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 5px;
-		border: 2px solid #ffb005;
+		border-radius: 0px;
+		border: 0px solid #ffb005;
 		display: inline-block;
 		position: relative;
 	}
@@ -2191,24 +2191,26 @@ input, select, textarea {
 			left: 0;
 			right: 0;
 			background: rgba(255,176,5, 0.4);
-			transition: background .3s linear;
+			transition: background .3s linear;	
+			border-radius: 5px;
+			border: 2px solid #ffb005;
 		}
 		.image.fit:hover:before{
 			background: none;
 		}
 
-			.image.fit img:before {
+			.image.fit img {
 				display: block;
 				width: 100%;
 				filter: grayscale(100%);
 				transition: all 300ms ease;
 			}
+			.image.fit img:hover{
+				filter: grayscale(0%);
+			}
 			.image.fit .image.avatar{
 				filter: grayscale(100%);
 				transition: all 300ms ease;
-			}
-			.image.fit img:hover:before{
-				filter: grayscale(0%);
 			}
 
 		.image.avatar {
