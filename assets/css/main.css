@@ -3389,8 +3389,8 @@ input, select, textarea {
 
 .rectangle{
 	display: inline-block;
-	padding: 2.5em;
-	width: auto;
+	margin: 0.1em;
+	width: 1.5em;
 	height: 2.73em;
 	background: repeating-linear-gradient( 45deg, #ffb005, #ffb005 8px, #cc8b00 8px, #cc8b00 16px );
 	vertical-align: top;
