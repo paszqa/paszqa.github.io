@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css");*/	
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 @font-face { font-family: Encode Sans SC; src: url('EncodeSansSC.ttf');}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -2414,8 +2414,8 @@ input, select, textarea {
 		ul.feature-icons li {
 			text-decoration: none;
 			display: inline-block;
-			margin: 0 0 0.6em 0;
-			padding: 0.35em 0 0 3.5em;
+			margin: 0 0 0.3em 1em;
+			padding: 0 0 0 3em;
 			position: relative;
 			vertical-align: top;
 			width: 98%;
@@ -2439,13 +2439,13 @@ input, select, textarea {
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
-				height: 2.5em;
+				height: 1.75em;
 				left: 0;
-				line-height: 2.5em;
+				line-height: 1.75em;
 				position: absolute;
 				text-align: center;
 				top: 0;
-				width: 2.5em;
+				width: 1.75em;
 			}
 
 /* Icons */

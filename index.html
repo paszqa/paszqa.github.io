@@ -58,7 +58,7 @@
 									<p>A tool used to keep track of current and historical state of hardware, services and processes. Small scale, simple and performant. Made for personal use to monitor Raspberry Pi at home.</p>
 									<div class="row">
 										<div class="col-6 col-12-xsmall">
-											<p>The project is kept within a single shell script, which consists of multiple checks - ex. CPU, filesystem, process. User chooses which check to run via command line parameter and afterwards generates a CSV file with semicolon separated date + results</p>
+											<p>The project is kept within a single shell script, which consists of multiple checks - ex. CPU, filesystem, process. User chooses which check to run via command line parameter and it generates a CSV file with semicolon separated date + results.</p>
 										</div>
 										<div class="col-6 col-12-xsmall">
 											<ul class="feature-icons">
@@ -133,7 +133,7 @@
 										<div class="col-6 col-12-xsmall">
 											<ul class="feature-icons">
 												<li class="icon solid brands fa-python">Python scripting</li>
-												<li class="icon solid fa-linux">Data processing</li>
+												<li class="icon solid fa-file-export">Data processing</li>
 											</ul>
 										</div>
 									</div>
@@ -146,6 +146,59 @@
 									</div>
 								</div>
 							</section>
+							<!-- ZERO4 -->
+							<section id="zero4">
+								
+								<div class="container">
+									<h3>Steamtracker<span class="button primary small"><a href="#" class="icon brands fa-github"><span class="label">Github</span> Github link</a></span></h3>
+									<p></p>
+									<div class="row">
+										<div class="col-6 col-12-xsmall">
+											<p>A relatively complex tool, which tracks users game activity on Steam platform. It is designed to be launched once every 24 hours and (depending on account's library size) might need quite a while to complete the scan and generate a website. The project is still in development and the code hasn't been cleaned up yet, but I successfully automated it by scheduling the execution of full-workflow.sh, which scans online profiles for each user directory present.</p>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<ul class="feature-icons">
+												<li class="icon solid fa-hashtag">Bash scripting</li>
+												<li class="icon solid brands fa-php">PHP</li>
+												<li class="icon solid fa-file-export">Data processing</li>
+											</ul>
+										</div>
+									</div>
+									
+								<div class="features">
+									<article>
+										<a href="#" class="image"><img src="images/cryp1.png" alt="" /></a>
+										<div class="inner">
+											<h4>Adding a new user to track</h4>
+											<p>Running addnewid.py creates a directory and a basic information file.</p>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/cryp2.png" alt="" /></a>
+										<div class="inner">
+											<h4>Getting website data into DB</h4>
+											<p>Next step is executing site2DB.sh - using API key, all available historical data of the profile with chosen ID is scanned and moved to local database. If the user already exists in the DB, most recent values are compared to the previous entries and only delta is added to database, as it saves A LOT of the storage space.</p>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/cryp3.png" alt="" /></a>
+										<div class="inner">
+											<h4>Monthly stats</h4>
+											<p>Executing calcMonthFromDB.sh calculates the sum of time played for each month available, fills in the blanks and creates TXT/CSV files for quick access to the top 5 titles.</p>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/cryp3.png" alt="" /></a>
+										<div class="inner">
+											<h4>Generating the website</h4>
+											<p>Script genWebSmallFromDB.sh accesses the database and relevant files and builds a static website with a table containing human-readable information - by default it includes the last 40 days.</p>
+										</div>
+									</article>
+								</div>
+									<span class="image fit"><img src="images/steam1.jpg" alt="" /></span>
+								</div>
+							</section>
+						
 						
 						<!-- One -->
 							<section id="one">
