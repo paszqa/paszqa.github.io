@@ -3370,15 +3370,16 @@ input, select, textarea {
 			}
 
 	}
-.button.alt{
+.mybutton{
 	background-color: black;
 	border: 2px solid #black;
-	color: #ffb005 !important;
+	color: white;
 	line-height: 1.2em;
+	font-size: 1em;
 	vertical-align: middle;
 }
 
-.button.alt:hover{
+.mybutton:hover{
 	background-color: #ffb005;
 	color: #fff;
 }
