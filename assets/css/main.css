@@ -2055,7 +2055,14 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
-
+	.image.effect:before{
+		filter: grayscale(100%);
+		transition: all 300ms ease;
+	}
+	.image.effect:hover:before{
+		filter: grayscale(0%);
+		transition: all 300ms ease;
+	}
 		.image[data-position] img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
