@@ -2172,10 +2172,17 @@ input, select, textarea {
 			border: 2px solid #ccc;
 			display: block;
 			transition: all 0.5s ease;
+			filter: grayscale(100%);
+			transition: all 300ms ease;
+		}
+		.image.avatar{
+			filter: grayscale(0%);
 		}
 
 		.image img:hover {
 			border: 2px solid #ffb005;
+			filter: grayscale(0%);
+			transition: all 300ms ease;
 		}
 
 		.image.left {
