@@ -3370,3 +3370,15 @@ input, select, textarea {
 			}
 
 	}
+.button.alt{
+	background-color: black;
+	border: 2px solid #black;
+	color: #ffb005 !important;
+	line-height: 1.2em;
+	vertical-align: middle;
+}
+
+.button.alt:hover{
+	background-color: #ffb005;
+	color: #fff;
+}
