@@ -2243,6 +2243,7 @@ input, select, textarea {
 				border-radius: 100%;
 				display: block;
 				width: 100%;
+				filter: grayscale(0%);
 			}
 
 		.image.main {
