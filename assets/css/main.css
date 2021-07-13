@@ -3370,9 +3370,9 @@ input, select, textarea {
 			}
 
 	}
-.mybutton{
+#header a .mybutton{
 	background-color: transparent;
-	color: white;
+	color: white !important;
 	line-height: 1.2em;
 	font-size: 1em;
 	vertical-align: middle;
@@ -3381,8 +3381,16 @@ input, select, textarea {
 	border-bottom: 2px solid black;
 }
 
-.mybutton:hover{
+#header a .mybutton:hover{
 	background-color: black;
-	color: #ffb005;
+	color: #ffb005 !important;
 	border-bottom: 2px solid black;
+}
+
+.rectangle{
+	display: inline-block;
+	padding: 1em;
+	width: 2em;
+	height: 2.73em;
+	background: repeating-linear-gradient( 45deg, #ffb005, #ffb005 8px, #cc8b00 8px, #cc8b00 16px );
 }
