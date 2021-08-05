@@ -121,10 +121,9 @@
 								
 							<div class="container">
 								<h3>Cryptocurrency Tracker <span class="button primary small"><a href="https://github.com/paszqa/cryptotracker" class="icon brands fa-github"><span class="label">Github</span> Github link</a></span></h3>
-								<p>A tracker for chosen cryptocurrencies. Saves and generates multiple reports, based on CoinMarketCap website.</p>
 								<div class="row">
 									<div class="col-6 col-12-xsmall">
-										<p>The project is kept within a single shell script, which consists of multiple checks - ex. CPU, filesystem, process. User chooses which check to run via command line parameter and afterwards generates a CSV file with semicolon separated date + results</p>
+										<p>A tracker for chosen cryptocurrencies. Saves and generates multiple reports, based on CoinMarketCap website. It is fairly generic, and allows users to customize queries and reports according to their own preferences.</p>
 									</div>
 									<div class="col-6 col-12-xsmall">
 										<ul class="feature-icons">
@@ -138,14 +137,14 @@
 										<a href="#" class="image"><img src="images/cryp1.png" alt="" /></a>
 										<div class="inner">
 											<h4>Get raw data</h4>
-											<p>Running crypto.py queries the API of CoinMarketCap website and saves raw results for the currencies defined in the configuration.</p>
+											<p>Running <code>crypto.py</code> queries the API of CoinMarketCap website and saves raw results for the currencies defined in the configuration.</p>
 										</div>
 									</article>
 									<article>
 										<a href="#" class="image"><img src="images/cryp2.png" alt="" /></a>
 										<div class="inner">
 											<h4>Calculate according to user's input</h4>
-											<p>Script calculate.py uses this data and values from user's portfolio file (which contains quantity of each coin and price at the time of purchase) to generate profit/loss CSV report.</p>
+											<p>Script <code>calculate.py</code> uses this data and values from user's portfolio file (which contains quantity of each coin and price at the time of purchase) to generate profit/loss CSV report.</p>
 										</div>
 									</article>
 									<article>
