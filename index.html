@@ -28,6 +28,7 @@
 						<li><a href="#zero3">Releases report</a></li>
 						<li><a href="#zero4">Steamtracker</a></li>
 						<li><a href="#zero5">Infosite</a></li>
+						<li><a href="#zero6">qBot for Discord</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -196,9 +197,10 @@
 									<div class="col-6 col-12-xsmall">
 										<ul class="feature-icons">
 											<li class="icon solid fa-hashtag">Bash scripting</li>
-											<li class="icon solid brands fa-php">PHP</li>
+											<li class="icon solid brands fa-php">HTML</li>
 											<li class="icon solid fa-file-export">Data processing</li>
 											<li class="icon brands fa-css3">CSS3</li>
+											<li class="icon solid fa-magic">Automation</li>
 										</ul>
 									</div>
 								</div>
@@ -272,6 +274,83 @@
 										<div class="col-4"><span class="image fit"><img src="images/infos3monit2.png" alt="" /></span></div>
 									</div>
 								</div>
+								
+							</div>
+						</section>
+						<!-- ZERO -->
+						<section id="zero6">
+							
+							<div class="container">
+								<h3>qBot for Discord <span class="button primary small"><a href="https://github.com/paszqa/qbot2" class="icon brands fa-github"><span class="label">Github</span> Github link</a></span></h3>
+								
+								<div class="row">
+									<div class="col-6 col-12-xsmall">
+										<p>An automation system for Discord, capable of delivering stats, information, trivia and any random stuff, as well as heavy data collection.</p>
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<ul class="feature-icons">
+											<li class="icon solid fa-node">NodeJS scripting</li>
+											<li class="icon solid brands fa-python">Python scripting</li>
+											<li class="icon solid fa-chart-bar">Data reporting</li>
+											<li class="icon solid fa-magic">Automation</li>
+											Mysql
+										</ul>
+									</div>
+								</div>
+								
+								<div class="features">
+									<article>
+										<i href="#" class="image"><img src="images/qbot_discord.png" alt="" /></i>
+										<div class="inner">
+											<p>The application runs on a NodeJS server and is heavily based on extended versions of other scripts. qBot reacts to scheduled jobs and Discord users' actions - ex. certain messages, commands, or reactions - and acts accordingly. Each feature is a separate module with its own requirements specified.</p>
+										</div>
+									</article>
+									<article>
+										<i href="#" class="image"><img src="images/qbot_db.png" alt="" /></i>
+										<div class="inner">
+											<p>It requires custom configuration per server, and keeps most of the data within a MariaDB database, with select chosen outputs saved within the filesystem to prevent querying the DB server and waiting for its response. It was designed for RaspberryPi, so limited computing power was always a concern.</p>
+										</div>
+									</article>
+									<article>
+										<i href="#" class="image"><img src="images/qbot_price.png" alt="" /></i>
+										<div class="inner">
+											<p>One of the features is "Game Price" module, which allows users to type in a command and get current price of the game, its availability, and access options within seconds - plus it provides a link to a price aggregator, which offers even more information. The module acts like a user agent, and relies on scanning the website itself.</p>
+										</div>
+									</article>
+									<article>
+										<i href="#" class="image"><img src="images/qbot_votes.png" alt="" /></i>
+										<div class="inner">
+											<p>Another module allows admin to specify vote options and a dedicated voting channel, prepares the posts, and tracks users' reactions. It only takes into the account the most recent vote of each user and pushes it to the database. In case of losing connectivity or failure, the module is able to rescan all of its posts and recreate any missing options, so no data is lost.</p>
+										</div>
+									</article>
+									<article>
+										<i href="#" class="image"><img src="images/qbot_activity.png" alt="" /></i>
+										<div class="inner">
+											<p>Next feature is data collection. Bot runs a check on all users on predefined Discord server, and saves their status, activity, game title, Twitch ID, Twitch activity. Users are able to add their Steam accounts to the database manually, which are then managed by Steam Tracker.</p>
+										</div>
+									</article>
+									<article>
+										<i href="#" class="image"><img src="images/qbot_image.png" alt="" /></i>
+										<div class="inner">
+											<p>Data collected by other modules is used to generate an infographic of sorts - a summary of user activity on the server within the last 7 days. It queries the database filtering most recent data of each user, sums it up, creates CSV lists sorted by values, queries IGDB online API for game covers, queries Twitch/Steam/Discord for users' avatars, saves them and creates the image according to preset configuration.</p>
+										</div>
+									</article>
+									<article>
+										<i href="#" class="image"><img src="images/qbot_logs.png" alt="" /></i>
+										<div class="inner">
+											<p>Application logs all of its actions with entries properly tagged and timestamped, to make troubleshooting easier. Especially that qBot2 is still a work in progress project.</p>
+										</div>
+									</article>
+								</div>
+								<!---
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/infos1rss2.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/infos2cryp2.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/infos3monit2.png" alt="" /></span></div>
+									</div>
+								</div>
+								--->
 								
 							</div>
 						</section>
