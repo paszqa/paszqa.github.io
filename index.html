@@ -289,11 +289,11 @@
 									</div>
 									<div class="col-6 col-12-xsmall">
 										<ul class="feature-icons">
-											<li class="icon solid fa-node">NodeJS scripting</li>
+											<li class="icon brands fa-node">NodeJS scripting</li>
 											<li class="icon solid brands fa-python">Python scripting</li>
 											<li class="icon solid fa-chart-bar">Data reporting</li>
 											<li class="icon solid fa-magic">Automation</li>
-											Mysql
+											<li class="icon solid fa-database">MariaDB</li>
 										</ul>
 									</div>
 								</div>
@@ -320,19 +320,19 @@
 									<article>
 										<i href="#" class="image"><img src="images/qbot_votes.png" alt="" /></i>
 										<div class="inner">
-											<p>Another module allows admin to specify vote options and a dedicated voting channel, prepares the posts, and tracks users' reactions. It only takes into the account the most recent vote of each user and pushes it to the database. In case of losing connectivity or failure, the module is able to rescan all of its posts and recreate any missing options, so no data is lost.</p>
+											<p>Another module, "Vote System" allows admin to specify vote options and a dedicated voting channel, prepares the posts, and tracks users' reactions. It only takes into the account the most recent vote of each user and pushes it to the database. In case of losing connectivity or failure, the module is able to rescan all of its posts and recreate any missing options, so no data is lost.</p>
 										</div>
 									</article>
 									<article>
 										<i href="#" class="image"><img src="images/qbot_activity.png" alt="" /></i>
 										<div class="inner">
-											<p>Next feature is data collection. Bot runs a check on all users on predefined Discord server, and saves their status, activity, game title, Twitch ID, Twitch activity. Users are able to add their Steam accounts to the database manually, which are then managed by Steam Tracker.</p>
+											<p>Next feature is data collection functionality, called "Activity". Bot runs a check on all users on predefined Discord server, and saves their name, ID, status, current activity, game title, Twitch ID and activity, as well as server's user count. Users are able to add their Steam accounts to the database manually, which are then managed by Steam Tracker. It runs every couple of minutes.</p>
 										</div>
 									</article>
 									<article>
 										<i href="#" class="image"><img src="images/qbot_image.png" alt="" /></i>
 										<div class="inner">
-											<p>Data collected by other modules is used to generate an infographic of sorts - a summary of user activity on the server within the last 7 days. It queries the database filtering most recent data of each user, sums it up, creates CSV lists sorted by values, queries IGDB online API for game covers, queries Twitch/Steam/Discord for users' avatars, saves them and creates the image according to preset configuration.</p>
+											<p>Data collected by other modules is used to generate an infographic of sorts - a summary of user activity on the server within the last 7 days. It queries the database filtering most recent data of each user, sums it up, creates CSV lists sorted by values, queries IGDB online API for game covers, downloads these covers, queries Twitch/Steam/Discord APIs for users' basic info and avatars, saves them and creates the image according to preset configuration.</p>
 										</div>
 									</article>
 									<article>
